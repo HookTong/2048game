@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <style lang="css">
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            overflow: hidden;
+            overscroll-behavior: none;
+        }
+
+        .game-wapper {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .game-wapper .item {
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+
+        .btn-wapper {
+            margin-top: 20px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .btn-wapper .item {
+            width: calc(100% / 5);
+            height: 100px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root" class="game-wapper"></div>
+
+    <div class="btn-wapper">
+        <button id="up-btn" class="item">
+            up
+        </button>
+
+        <button id="down-btn" class="item">
+            down
+        </button>
+
+        <button id="left-btn" class="item">
+            left
+        </button>
+
+        <button id="right-btn" class="item">
+            right
+        </button>
+
+        <button id="reset-btn" class="item">
+            reset
+        </button>
+    </div>
+
+    <script lang="javescript" src="./main.js"></script>
+</body>
+
+</html>
